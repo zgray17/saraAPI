@@ -1,0 +1,19 @@
+POST /spAPI.asmx HTTP/1.1
+Host: webservice.saraplus.com
+Content-Type: text/xml; charset=utf-8
+Content-Length: length
+SOAPAction: "https://webservice.saraplus.com/spAPI/SARAPlus_OrderHistory"
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+ <soap:Body>
+ <SARAPlus_OrderHistory xmlns="https://webservice.saraplus.com/spAPI">
+ <AccessKey>string</AccessKey>
+ <ConnectionID>string</ConnectionID>
+ <StartDate>3/11/2018</StartDate>
+ <EndDate>3/14/2018</EndDate>
+ </SARAPlus_OrderHistory>
+ </soap:Body>
+</soap:Envelope>
